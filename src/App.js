@@ -48,7 +48,7 @@ function App() {
   return (
   <div>
     <Routes>
-      <Route exact path="/REST-API" element={ isLogin? <Home user={user} setUser={setUser}/> : <Login setIsLogin={setIsLogin} app={app} /> }/>
+      <Route path="/REST-API" element={ isLogin? <Home user={user} setUser={setUser}/> : <Login setIsLogin={setIsLogin} app={app} /> }/>
       <Route exact path="/login" element={<Login setIsLogin = {setIsLogin} app={app} />}/>
       <Route exact path="/register" element={<Registration app={app} />}/>
     </Routes>
