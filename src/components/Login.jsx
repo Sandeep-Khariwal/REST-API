@@ -28,7 +28,7 @@ const Login = ({setIsLogin,app}) => {
           setError("Login Successfully")
           setTimeout(()=>{
             setIsLogin(true)
-            navigate("/")
+            navigate("/REST-API")
           },3000)
         })
         .catch((error) => {
